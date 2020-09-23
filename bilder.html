@@ -5,11 +5,12 @@
         <title></title>
         <style>
             .bilder{
-                width: 400px;
-                height: 300px;
+                width: 100px;
+                height: 100px;
             border-width: 5px;
             border-style: solid;
             border-color: black;
+            border-radius: 50%;
             
             margin-right: 35px;
             margin-bottom: 35px;
@@ -25,7 +26,7 @@
                 margin-left: 200px;
                 margin-right: 200px;
                 text-align: center;
-                background-image: url(bakgrunnsbilde.jpg);
+                background-image: url(medier/bakgrunnsbilde.jpg);
                 
                
             }
@@ -54,18 +55,78 @@
                 padding: 20px;
                 margin: 10px;
             }
+            table{
+                border-collapse: collapse;
+                margin-left: 150px;
+                border-width: medium;
+            }
+            thead>tr{
+                background-color: whitesmoke;
+            }
+            th{
+                text-align: center;
+                padding: 10px 20px;
+                font-size: 20px;
+            }
+            td{
+                text-align: center;
+                padding: 10px 20px;
+                border: 5px black;
+                font-size: 18px;
+            }
+            img:hover{
+                width: 200px;
+                height: 200px;
+                position: static;
+            }
         
         </style>
     
     </head>
     <body>
-        <img src="vestlandlogo2.png" id="logo">
+        <img src="medier/vestlandlogo2.png" id="logo">
         
         <div>
         <h3>Meny:</h3>
        <li><a href="index.html">Hovedside</a></li>
         <li><a href="video.html">Video av samspill i 3M</a></li>
         <h1>Elevene i programfaget IT1</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>Bilde:</th>
+                <th>Navn:</th>
+                <th>Bilde:</th>
+                <th>Navn:</th>
+            </tr>
+         </thead>
+            <tbody>
+            <tr>
+                <td><img src="medier/inga.jpg" alt="Inga" title="Inga" class="bilder"></td>
+                <td>Inga Louise Lode</td>
+                 <td><img src="medier/kari.jpg" alt="Kari" title="Kari" class="bilder"></td>
+                <td>Kari Nakkerud</td>
+            </tr>
+            <tr>
+                <td><img src="medier/arn.jpg" alt="Arn" title="Arn" class="bilder"></td>
+                <td>Arn Fossmark</td>
+                <td><img src="medier/magnar.png" alt="Magnar" title="Magnar" class="bilder"></td>
+                <td>Magnar Lussand Selheim</td>
+            </tr>
+            <tr>
+                <td><img src="medier/agnete.jpg" alt="Agnete" title="Agnete" class="bilder"></td>
+                <td>Agnete Sundve Olde</td>
+                <td><img src="medier/odin.jpg" alt="Odin" title="Odin" class="bilder"></td>
+                <td>Odin Lyngsgård</td>
+            </tr>
+            <tr>
+                <td><img src="medier/Thomas.jpg" alt="Thomas" title="Thomas" class="bilder"></td>
+                <td>Thomas Vedå</td>
+                 <td><img src="medier/torstein.jpg" alt="Torstein" title="Torstein" class="bilder"></td>
+                <td>Torstein Ringheim</td>
+            </tr>
+            </tbody>
+        </table>
         </div>
       </body>
 
